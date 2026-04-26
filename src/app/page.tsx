@@ -56,8 +56,8 @@ export default function Home() {
             <Link href="/how-it-works" className={pillGhost}>
               How it works →
             </Link>
-            <Link href="/judges" className={pillGhost}>
-              For reviewers →
+            <Link href="/reference" className={pillGhost}>
+              Reference →
             </Link>
           </div>
         }

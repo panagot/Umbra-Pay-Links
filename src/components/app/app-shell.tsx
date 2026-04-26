@@ -36,9 +36,9 @@ const NAV = [
     icon: "agent",
   },
   {
-    href: "/judges",
-    label: "For reviewers",
-    description: "Links · checklist · Umbra proof",
+    href: "/reference",
+    label: "Reference",
+    description: "Links · codebase map",
     icon: "judge",
   },
 ] as const;
@@ -301,8 +301,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/judges" className="hover:text-teal">
-                    For reviewers
+                  <Link href="/reference" className="hover:text-teal">
+                    Reference
                   </Link>
                 </li>
               </ul>

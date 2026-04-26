@@ -20,7 +20,7 @@ export default function AgentsPage() {
         eyebrow="Automation"
         eyebrowTone="teal"
         title="Agents & APIs"
-        description="Private machine-to-machine payments: agents poll one URL, receive standard 402 + JSON, run the same Umbra settlement as a human, then read the unlocked response with structured content. Matches the Umbra Side Track emphasis on x402-style private machine payments without inventing a parallel protocol."
+        description="Private machine-to-machine payments: agents poll one URL, receive standard 402 + JSON, run the same Umbra settlement as a human, then read the unlocked response with structured content. Uses a common x402-style envelope without defining a separate payment protocol."
       />
 
       <DocSection title="Resource URL">
@@ -177,7 +177,7 @@ export default function AgentsPage() {
       </DocSection>
 
       <DocFooterNav>
-        <DocNavLink href="/judges">For reviewers</DocNavLink>
+        <DocNavLink href="/reference">Reference</DocNavLink>
         <span className="text-line-strong" aria-hidden>
           ·
         </span>

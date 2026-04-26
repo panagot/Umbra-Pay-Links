@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "How it works · Umbra Pay Links",
   description:
-    "Umbra Side Track story: opaque pay links, Umbra SDK settlement, x402-shaped HTTP 402 for agents, confirm path, and unlocked JSON on 200.",
+    "Opaque pay links, Umbra SDK settlement, x402-shaped HTTP 402 for agents, confirm path, and unlocked JSON on 200.",
 };
 
 export default function HowItWorksPage() {
@@ -22,7 +22,7 @@ export default function HowItWorksPage() {
         description="Umbra exists so value can move on Solana without turning every counterparty into a public graph. Here that shows up as a pay link people already know how to use, plus one URL agents can poll the same way they would any other gated API."
       />
 
-      <DocSection title="Mission fit (Umbra track)">
+      <DocSection title="Product scope">
         <ul className="list-inside list-disc space-y-2">
           <li>
             <strong className="text-ink">Private payment links</strong>: share a URL with
@@ -111,35 +111,7 @@ export default function HowItWorksPage() {
         </ol>
       </DocSection>
 
-      <DocSection title="Recording your pitch (video)">
-        <ol className="list-inside list-decimal space-y-2 text-sm text-muted">
-          <li>
-            <strong className="text-ink">Hook (15–30s):</strong> public payer graphs vs
-            Umbra; one link for people and agents.
-          </li>
-          <li>
-            <strong className="text-ink">Simulated (45–90s):</strong>{" "}
-            <DocNavLink href="/demo">Demo center</DocNavLink> retail + 402 timeline (no
-            wallet).
-          </li>
-          <li>
-            <strong className="text-ink">Live (60–120s):</strong> create intent on home,
-            show opaque id, pay with Umbra, show <code>GET /api/resources/&lt;id&gt;</code>{" "}
-            402 then 200 + <code>content</code>.
-          </li>
-          <li>
-            <strong className="text-ink">Proof (30–45s):</strong> GitHub →{" "}
-            <code>pay-with-umbra.tsx</code> / <code>agent-pay.mjs</code> /{" "}
-            <DocNavLink href="/judges">For reviewers</DocNavLink>.
-          </li>
-        </ol>
-      </DocSection>
-
       <DocFooterNav>
-        <DocNavLink href="/judges">For reviewers</DocNavLink>
-        <span className="text-line-strong" aria-hidden>
-          ·
-        </span>
         <DocNavLink href="/settlement">Settlement &amp; Umbra</DocNavLink>
         <span className="text-line-strong" aria-hidden>
           ·

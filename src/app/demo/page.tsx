@@ -9,7 +9,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Demo center · Umbra Pay Links",
   description:
-    "In-browser simulations: retail checkout, then 402 to Umbra path to 200. Recordable for a pitch video without a wallet; then cut to the live create flow on the home page.",
+    "In-browser simulations: retail-style checkout and the HTTP 402 resource timeline without a wallet or RPC.",
 };
 
 export default function DemoPage() {
@@ -17,21 +17,20 @@ export default function DemoPage() {
     <DemoCheckoutProvider>
       <div className="space-y-4 pb-6">
         <DocHero
-          eyebrow="Pitch & demos"
+          eyebrow="Interactive"
           eyebrowTone="teal"
           title="Demo center"
           description={
             <>
-              Use the retail sim and the 402 timeline below for a clean screen recording
-              (no wallet, no RPC). Then show the real product:{" "}
+              Simulations run entirely in the browser (no wallet, no RPC). For the live
+              flow,{" "}
               <Link href="/" className="font-medium text-teal hover:underline">
                 create an intent
-              </Link>
-              , pay on <code className="text-ink">/pay/&lt;id&gt;</code>, and poll{" "}
-              <code className="text-ink">/api/resources/&lt;id&gt;</code> until 200. Judges:
-              see also{" "}
-              <Link href="/judges" className="font-medium text-teal hover:underline">
-                For reviewers
+              </Link>{" "}
+              on the home page, then use <code className="text-ink">/pay/&lt;id&gt;</code> and{" "}
+              <code className="text-ink">/api/resources/&lt;id&gt;</code> as documented on{" "}
+              <Link href="/how-it-works" className="font-medium text-teal hover:underline">
+                How it works
               </Link>
               .
             </>
@@ -46,17 +45,17 @@ export default function DemoPage() {
         </div>
 
         <p className="text-center text-[11px] text-faint">
-          Use cases and diagrams:{" "}
+          Further detail:{" "}
           <Link href="/how-it-works" className="text-teal underline-offset-2 hover:underline">
             How it works
           </Link>
-          ,{" "}
+          {" · "}
           <Link href="/agents" className="text-teal underline-offset-2 hover:underline">
             Agents &amp; APIs
           </Link>
-          ,{" "}
-          <Link href="/judges" className="text-teal underline-offset-2 hover:underline">
-            For reviewers
+          {" · "}
+          <Link href="/reference" className="text-teal underline-offset-2 hover:underline">
+            Reference
           </Link>
           .
         </p>

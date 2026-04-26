@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Settlement · Umbra Pay Links",
   description:
-    "Umbra SDK proof points for judges: getUmbraClient, receiver-claimable UTXO from public USDC, web ZK prover, confirm + optional on-chain verify.",
+    "Umbra SDK surface: getUmbraClient, receiver-claimable UTXO from public USDC, web ZK prover, confirm + optional on-chain verify.",
 };
 
 export default function SettlementPage() {
@@ -91,7 +91,7 @@ export default function SettlementPage() {
         </p>
       </DocSection>
 
-      <DocSection title="Reviewer checklist (2 minutes)">
+      <DocSection title="Verification">
         <ul className="list-inside list-disc space-y-2 text-sm text-muted">
           <li>
             Confirm there is <strong className="text-ink">no SPL-only shortcut</strong> in
@@ -125,7 +125,7 @@ export default function SettlementPage() {
       </DocSection>
 
       <DocFooterNav>
-        <DocNavLink href="/judges">For reviewers</DocNavLink>
+        <DocNavLink href="/reference">Reference</DocNavLink>
         <span className="text-line-strong" aria-hidden>
           ·
         </span>

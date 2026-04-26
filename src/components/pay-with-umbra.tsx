@@ -307,8 +307,8 @@ export function PayWithUmbra({
             <Link href="/agents" className="hover:underline">
               Agents &amp; APIs →
             </Link>
-            <Link href="/judges" className="hover:underline">
-              For reviewers →
+            <Link href="/reference" className="hover:underline">
+              Reference →
             </Link>
           </div>
         </div>

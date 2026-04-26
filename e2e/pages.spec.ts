@@ -6,7 +6,7 @@ const staticPaths = [
   "/how-it-works",
   "/settlement",
   "/agents",
-  "/judges",
+  "/reference",
 ] as const;
 
 for (const path of staticPaths) {
