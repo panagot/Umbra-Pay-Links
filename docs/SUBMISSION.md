@@ -7,7 +7,7 @@ Use this file when submitting to [Build with Umbra Side Track for $10,000](https
 | Item | URL |
 |------|-----|
 | Live demo | https://umbra-pay-links.vercel.app/ |
-| Source code | https://github.com/panagot/-Umbra-Pay-Links |
+| Source code | https://github.com/panagot/Umbra-Pay-Links |
 | Umbra SDK | https://sdk.umbraprivacy.com/ |
 | Contact (listing) | https://t.me/abbasshaikh01 (from Superteam listing) |
 
@@ -62,7 +62,7 @@ Short template (adapt tone to form limits):
 > Settlement is the real Umbra SDK path: public USDC → **receiver-claimable UTXO** toward the merchant (`getPublicBalanceToReceiverClaimableUtxoCreatorFunction` + `@umbra-privacy/web-zk-prover`), in the browser and in `npm run agent:pay` for headless parity. Confirmation posts signatures to `/api/intents/<id>/confirm`; optional `REQUIRE_ONCHAIN_CONFIRM_FOR_SETTLE` for RPC verification.  
 >
 > **Links**  
-> Live: [umbra-pay-links.vercel.app](https://umbra-pay-links.vercel.app/) · Repo: [github.com/panagot/-Umbra-Pay-Links](https://github.com/panagot/-Umbra-Pay-Links) · SDK: [sdk.umbraprivacy.com](https://sdk.umbraprivacy.com/)
+> Live: [umbra-pay-links.vercel.app](https://umbra-pay-links.vercel.app/) · Repo: [github.com/panagot/Umbra-Pay-Links](https://github.com/panagot/Umbra-Pay-Links) · SDK: [sdk.umbraprivacy.com](https://sdk.umbraprivacy.com/)
 
 ## Umbra SDK callouts (for judges skimming the repo)
 

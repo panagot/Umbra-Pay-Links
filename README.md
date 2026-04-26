@@ -5,7 +5,7 @@ Private payment links for people and software on Solana. Each intent gets a huma
 | | |
 | --- | --- |
 | **Live app** | [umbra-pay-links.vercel.app](https://umbra-pay-links.vercel.app/) |
-| **Repository** | [panagot/-Umbra-Pay-Links](https://github.com/panagot/-Umbra-Pay-Links) |
+| **Repository** | [panagot/Umbra-Pay-Links](https://github.com/panagot/Umbra-Pay-Links) |
 | **Track** | [Umbra Side Track (Superteam)](https://superteam.fun/earn/listing/umbra-side-track) |
 
 ---
