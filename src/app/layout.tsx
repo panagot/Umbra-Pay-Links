@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Toaster } from "sonner";
 import { AppShell } from "@/components/app/app-shell";
 import "./globals.css";
 
@@ -32,6 +33,19 @@ export default function RootLayout({
     >
       <body className="min-h-full font-sans">
         <AppShell>{children}</AppShell>
+        <Toaster
+          position="bottom-right"
+          richColors
+          closeButton
+          toastOptions={{
+            classNames: {
+              toast:
+                "!rounded-xl !border !border-line !bg-panel !text-ink !shadow-[var(--shadow-card)]",
+              title: "!font-semibold",
+              description: "!text-muted",
+            },
+          }}
+        />
       </body>
     </html>
   );

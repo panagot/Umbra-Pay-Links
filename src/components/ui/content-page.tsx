@@ -1,5 +1,8 @@
+"use client";
+
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 /** Standard vertical rhythm for marketing / docs routes. */
 export function ContentPageShell({ children }: { children: ReactNode }) {
@@ -23,8 +26,17 @@ export function DocHero({
 }: DocHeroProps) {
   const tone = eyebrowTone === "teal" ? "text-teal" : "text-brand";
   return (
-    <header className="flex flex-col gap-4 rounded-2xl border border-line bg-panel px-5 py-5 shadow-sm ring-1 ring-ink/[0.02] sm:flex-row sm:items-start sm:justify-between sm:px-6 sm:py-5">
-      <div className="min-w-0 flex-1 space-y-2">
+    <motion.header
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
+      className="relative flex flex-col gap-4 overflow-hidden rounded-2xl border border-line bg-panel px-5 py-5 shadow-sm ring-1 ring-ink/[0.02] sm:flex-row sm:items-start sm:justify-between sm:px-6 sm:py-5"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-24 -top-20 h-64 w-64 rounded-full bg-[radial-gradient(circle_at_center,rgb(12_92_86/0.08),transparent_60%)]"
+      />
+      <div className="relative min-w-0 flex-1 space-y-2">
         <p className={`text-[10px] font-bold uppercase tracking-[0.2em] ${tone}`}>
           {eyebrow}
         </p>
@@ -34,9 +46,11 @@ export function DocHero({
         </div>
       </div>
       {actions ? (
-        <div className="flex shrink-0 flex-col items-stretch gap-2 sm:items-end">{actions}</div>
+        <div className="relative flex shrink-0 flex-col items-stretch gap-2 sm:items-end">
+          {actions}
+        </div>
       ) : null}
-    </header>
+    </motion.header>
   );
 }
 

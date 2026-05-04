@@ -7,6 +7,7 @@ const staticPaths = [
   "/how-it-works",
   "/settlement",
   "/agents",
+  "/playground",
   "/reference",
 ] as const;
 

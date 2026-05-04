@@ -42,6 +42,12 @@ const NAV = [
     icon: "agent",
   },
   {
+    href: "/playground",
+    label: "API playground",
+    description: "Live REST tester",
+    icon: "playground",
+  },
+  {
     href: "/reference",
     label: "Reference",
     description: "Links · codebase map",
@@ -103,6 +109,12 @@ function NavIcon({ name }: { name: (typeof NAV)[number]["icon"] }) {
       return (
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" aria-hidden>
           <path d="M4 9h6M4 15h6M14 9l4 3-4 3M18 12h2" {...stroke} />
+        </svg>
+      );
+    case "playground":
+      return (
+        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" aria-hidden>
+          <path d="M5 19V5l14 7-14 7z" {...stroke} />
         </svg>
       );
     case "demo":
@@ -228,9 +240,16 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </Link>
           </div>
           <div className="flex shrink-0 items-center gap-2 pr-4 lg:pr-6">
-            <span className="hidden rounded-full border border-line bg-teal-soft/60 px-2.5 py-1 font-mono text-[10px] text-teal sm:inline">
-              Umbra privacy layer · x402-ready
-            </span>
+            <Link
+              href="/playground"
+              className="hidden items-center gap-1.5 rounded-full border border-line bg-teal-soft/60 px-2.5 py-1 font-mono text-[10px] font-semibold text-teal transition hover:border-teal/40 hover:bg-teal-soft sm:inline-flex"
+            >
+              <span
+                aria-hidden
+                className="umbra-pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-teal"
+              />
+              Live API · x402
+            </Link>
           </div>
         </div>
       </header>
@@ -315,6 +334,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 <li>
                   <Link href="/agents" className="hover:text-teal">
                     Agents &amp; APIs
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/playground" className="hover:text-teal">
+                    API playground
                   </Link>
                 </li>
                 <li>
